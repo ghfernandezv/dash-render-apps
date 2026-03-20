@@ -2701,7 +2701,8 @@ def render_modelos_tab(tab):
     return get_model_content(tab)
 
 # =============================================================
+import os
+
 if __name__ == "__main__":
-    ##app.run(debug=True)
-    
-    app.run(debug=True, host="0.0.0.0", port=9000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(debug=False, host="0.0.0.0", port=port)
