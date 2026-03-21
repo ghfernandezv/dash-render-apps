@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir --upgrade -r /requirements.txt
 
 COPY ./finmodulo.py /finmodulo.py
 
-EXPOSE 10000
+EXPOSE 9000
 
 CMD ["python", "finmodulo.py"]
