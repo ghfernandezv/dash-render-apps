@@ -2707,5 +2707,5 @@ if __name__ == "__main__":
     app.run(
         debug=False,
         host="0.0.0.0",
-        port=int(os.environ.get("PORT", 9000)))
+        port=int(os.environ.get("PORT", 10000)))
 
